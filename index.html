@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Joullian Andador — Software and Website Developer portfolio." />
+    <title>Joullian Andador | Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <div class="cursor-glow"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Joullian Andador home">JA<span>.</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><i></i><i></i></button>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#work">Work</a><a href="#skills">Expertise</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="header-cta" href="#contact">Let's talk <span>↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Available for selected projects</p>
+          <h1>Building digital<br /><em>experiences</em> that<br />move people.</h1>
+          <p class="hero-intro">I'm <strong>Joullian Andador</strong>, a software and website developer turning ambitious ideas into fast, useful, memorable products.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#work">Explore my work <span>↓</span></a><a class="text-link" href="#contact">Start a project <span>↗</span></a></div>
+        </div>
+        <div class="hero-visual reveal delay-1">
+          <div class="orb orb-one"></div><div class="orb orb-two"></div>
+          <div class="portrait-card" data-tilt>
+            <!-- Replace assets/profile.png with your own picture when needed. -->
+            <img src="assets/profile.png" alt="Joullian Andador" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'" />
+            <div class="portrait-fallback"><span>JA</span><small>YOUR PHOTO</small></div>
+            <div class="portrait-label"><span>BASED IN</span><b>Philippines</b></div>
+          </div>
+          <div class="floating-tag tag-code">&lt;/&gt; Web Development</div><div class="floating-tag tag-build">⚙ Build · Refine · Launch</div>
+        </div>
+        <div class="hero-bottom"><span>SCROLL TO DISCOVER</span><div class="scroll-line"></div><span>01 / 04</span></div>
+      </section>
+
+      <section class="about section" id="about">
+        <p class="section-index">01 <span>/ ABOUT ME</span></p>
+        <div class="about-grid">
+          <h2 class="reveal">The right mix of <em>logic, craft,</em> and curiosity.</h2>
+          <div class="about-text reveal delay-1"><p>I create websites and software that are as dependable under the hood as they are effortless to use. Every detail has a purpose—from a smooth first interaction to a robust final deployment.</p><p>Beyond the screen, my background in <strong>computer hardware</strong> gives me a practical, systems-first perspective on solving technical problems.</p><a class="text-link" href="about.html">More about me <span>↗</span></a></div>
+        </div>
+        <div class="stats reveal"><div><strong>01+</strong><span>Years building</span></div><div><strong>∞</strong><span>Ideas to explore</span></div><div><strong>100%</strong><span>Focus on quality</span></div></div>
+      </section>
+
+      <section class="work section" id="work">
+        <div class="section-heading"><p class="section-index">02 <span>/ SELECTED WORK</span></p><p>Thoughtful digital work,<br />made to perform.</p></div>
+        <div class="project-list">
+          <a class="project project-a reveal" href="#" aria-label="View project one"><div class="project-number">(01)</div><div class="project-art art-a"><span>FINTECH<br />DASHBOARD</span></div><div class="project-info"><div><h3>Vertex Finance</h3><p>Product design · Development</p></div><span class="project-arrow">↗</span></div></a>
+          <a class="project project-b reveal" href="#" aria-label="View project two"><div class="project-number">(02)</div><div class="project-art art-b"><span>ARC<br />STUDIO</span></div><div class="project-info"><div><h3>Arc Architecture</h3><p>Brand site · Web development</p></div><span class="project-arrow">↗</span></div></a>
+          <a class="project project-c reveal" href="#" aria-label="View project three"><div class="project-number">(03)</div><div class="project-art art-c"><span>NOIR<br />COMMERCE</span></div><div class="project-info"><div><h3>Northline Goods</h3><p>E-commerce · Experience design</p></div><span class="project-arrow">↗</span></div></a>
+        </div>
+        <a class="all-work text-link" href="projects.html">View all projects <span>↗</span></a>
+      </section>
+
+      <section class="skills section" id="skills">
+        <p class="section-index">03 <span>/ EXPERTISE</span></p>
+        <div class="skills-head"><h2 class="reveal">I shape the <em>whole</em><br />digital experience.</h2><p class="reveal delay-1">A flexible skill set for building products from an early idea through to a polished, launch-ready result.</p></div>
+        <div class="skill-grid">
+          <article class="skill-card reveal"><span class="skill-icon">✦</span><h3>Web Development</h3><p>Responsive, high-performance websites built with clean, scalable code.</p><div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article>
+          <article class="skill-card reveal delay-1"><span class="skill-icon">⌘</span><h3>Software Development</h3><p>Useful, considered applications that make complex tasks feel simple.</p><div class="chips"><span>UI / UX</span><span>APIs</span><span>Systems</span></div></article>
+          <article class="skill-card reveal delay-2"><span class="skill-icon">▣</span><h3>Computer Hardware</h3><p>Hands-on technical know-how for troubleshooting and system optimization.</p><div class="chips"><span>Diagnostics</span><span>Setup</span><span>Support</span></div></article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-orb"></div><p class="eyebrow reveal"><span></span> Have a project in mind?</p><h2 class="reveal delay-1">Let's create something<br /><em>remarkable.</em></h2><a class="contact-email reveal delay-2" href="mailto:hello@yourdomain.com">hello@yourdomain.com <span>↗</span></a>
+        <div class="contact-footer"><p>© <span id="year"></span> Joullian Andador</p><div class="socials"><a href="https://instagram.com/yourusername" target="_blank" rel="noreferrer">Instagram <span>↗</span></a><a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a><a href="https://wa.me/yourphonenumber" target="_blank" rel="noreferrer">WhatsApp <span>↗</span></a><a href="https://t.me/yourusername" target="_blank" rel="noreferrer">Telegram <span>↗</span></a><a href="mailto:hello@yourdomain.com">Email <span>↗</span></a><a href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub <span>↗</span></a></div></div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
